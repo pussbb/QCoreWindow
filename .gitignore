@@ -10,3 +10,12 @@
 *.lai
 *.la
 *.a
+*/obj
+
+moc_*
+
+qrc*.cpp
+*.log
+*~
+*.pro.user
+*Makefile
