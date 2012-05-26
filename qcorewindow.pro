@@ -12,10 +12,6 @@ SOURCES += $$PWD/src/qcorewindow.cpp
 
 HEADERS += $$PWD/src/qcorewindow.h
 
-
-RESOURCES += \
-    $$PWD/resource/lang.qrc
-
 unix{
     OBJECTS_DIR = ./obj/
     MOC_DIR = ./obj/

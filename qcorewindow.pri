@@ -11,6 +11,9 @@ win32:CONFIG(release, debug|release): PRE_TARGETDEPS += $$PWD/bin/QCoreWindow.li
 else:win32:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$PWD/bin/QCoreWindowd.lib
 else:unix:!symbian: PRE_TARGETDEPS += $$PWD/bin/libQCoreWindow.a
 
+RESOURCES += \
+    $$PWD/resource/lang.qrc
+    
 unix:{
   QMAKE_LFLAGS += -Wl,--rpath=$$PWD/bin/
   QMAKE_LFLAGS_RPATH=
