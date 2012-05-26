@@ -8,18 +8,18 @@ TARGET = QCoreWindow
 TEMPLATE = lib
 CONFIG += staticlib
 
-SOURCES += qcorewindow.cpp
+SOURCES += $$PWD/src/qcorewindow.cpp
 
-HEADERS += qcorewindow.h
+HEADERS += $$PWD/src/qcorewindow.h
 
 
 RESOURCES += \
-    resource/lang.qrc
+    $$PWD/resource/lang.qrc
 
 unix{
     OBJECTS_DIR = ./obj/
     MOC_DIR = ./obj/
-    DESTDIR = ../bin/
+    DESTDIR = ./bin/
     UI_DIR = ./obj/
 }
 
